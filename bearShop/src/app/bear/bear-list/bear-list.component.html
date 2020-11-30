@@ -1,8 +1,11 @@
-<div class="row">
-    <div class="col-xs-12">
-        <div class="list-group">
-            <app-bear-items *ngFor="let bearList of bear| filter: 'sex' | paginate: { itemsPerPage: 7, currentPage: p} ;let i = index" [index]="i" [bears] = "bearList"></app-bear-items>
-        </div>
+<div class="row col-xs-12">
+    <div class="pull-right">
         <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
 </div>
+<div class="row">
+    <div class="col-xs-12">
+            <app-bear-items *ngFor="let bearList of bear | paginate: { itemsPerPage: 16, currentPage: p} ;let i = index" [index]="i" [bears] = "bearList"></app-bear-items>
+    </div>   
+</div>
+

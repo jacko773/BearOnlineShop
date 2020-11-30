@@ -4,6 +4,40 @@ li a{
 a{
     cursor: pointer;  
 }
+.card{
+    margin-top: 25px;
+    
+} 
+.navbar-brand{
+    color: red !important;
+}
+.card-section{
+   border: 1px inset;
+   align-items: center;
+   margin-left: 30px;
+    margin-right: 30px; 
+    background-color: honeydew;
+}
+.card__header,.card__content,.card__actions{
+    text-align: center;
+}
+.card__image{
+    display: block;
+    background-color: grey;
+    text-align: center;
+    
+}
 
 
+.background{
+    background-image:url("https://s3-ap-southeast-1.amazonaws.com/he-public-data/low-calorie-beers-157981804958062d8.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
 
+.product__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

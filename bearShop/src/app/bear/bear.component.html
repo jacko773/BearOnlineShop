@@ -1,12 +1,14 @@
 <div class="row">
-    <div class="col-md-5 col-sm-6 col-xs-12">
-        <!-- <app-recipe-list (slectedRec) =finalSelectedRec($event)></app-recipe-list> -->
+    <app-header></app-header>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
         <app-bear-list></app-bear-list>
 
     </div>
-    <div class="col-md-7 col-sm-6 col-xs-12">
-        <!-- <app-recipe-details  *ngIf="recipeToPop ; else  noResipe" [recipesDetail]="recipeToPop"></app-recipe-details> -->
+    <!-- <div class="col-md-7 col-sm-6 col-xs-12">
+        
         <app-bear-details></app-bear-details>
-    </div>
-    <!-- <ng-template #noResipe>Please select Recipe</ng-template> -->
+    </div> -->
 </div>

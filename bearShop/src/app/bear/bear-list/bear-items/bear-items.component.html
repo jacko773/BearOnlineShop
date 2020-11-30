@@ -1,4 +1,4 @@
-<a  class='list-group-item clearfix' >
+<!-- <a  class='list-group-item clearfix' >
     <div class="pull-left">
         <h4 class="list-group-item-heading">
             {{bears.name}}
@@ -12,4 +12,28 @@
         <img [src]="bears.imagePath" alt="image not loaded yet" class='image-responsive'
             style="max-height: 70px;max-width: 70px;">
     </span>
-</a>
+</a> -->
+
+<div class="card product-item col-xs-12 col-sm-3 col-md-3">
+    <div class="card-section">
+        <header class="card__header">
+            <h5 class="product__title">
+                {{bears.name}}
+            </h5>
+        </header>
+        <div class="card__image">
+            <img [src]="bears.imagePath" [alt]="bears.name" style="height: 45px;max-width: 70px;">
+        </div>
+        <div class="card__content">
+            <h5>
+                {{bears.style}}
+                {{bears.ounces}}
+            </h5>
+            
+        </div>
+        <!-- <div class="card__actions">
+                <button class="btn btn-success">Add to Cart</button>
+        </div> -->
+    </div>
+    
+</div>
