@@ -6,6 +6,7 @@ import { BearListComponent } from './bear/bear-list/bear-list.component';
 import { BearComponent } from './bear/bear.component';
 import { BearDetailsComponent } from './bear/bear-details/bear-details.component';
 import { BearItemsComponent } from './bear/bear-list/bear-items/bear-items.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BearItemsComponent } from './bear/bear-list/bear-items/bear-items.compo
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

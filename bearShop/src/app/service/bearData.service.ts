@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Bear } from '../bear/bear.model'
 import { Injectable } from '@angular/core';
 import { Subject ,forkJoin } from 'rxjs';
-import {  findIndex, map } from 'rxjs/operators';
 @Injectable({providedIn : "root"})
 export class BearDataService{
     constructor(private http : HttpClient){}
